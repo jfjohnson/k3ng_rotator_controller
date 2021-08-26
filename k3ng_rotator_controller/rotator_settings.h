@@ -2,7 +2,7 @@
 /* -------------------------- rotation settings ---------------------------------------*/
 
 #define AZIMUTH_STARTING_POINT_EEPROM_INITIALIZE 180      // the starting point in degrees of the azimuthal rotator - only used for initializing EEPROM the first time the code is run                                               
-#define AZIMUTH_ROTATION_CAPABILITY_EEPROM_INITIALIZE 450 // the default rotation capability of the rotator in degrees - only used for initializing EEPROM the first time the code is run
+#define AZIMUTH_ROTATION_CAPABILITY_EEPROM_INITIALIZE 630 // the default rotation capability of the rotator in degrees - only used for initializing EEPROM the first time the code is run
 
 /* 
 
@@ -35,7 +35,7 @@ You can tweak these, but read the online documentation!
 #define ANALOG_EL_FULL_DOWN_EEPROM_INITIALIZE 1
 #define ANALOG_EL_FULL_UP_EEPROM_INITIALIZE 1023
 
-#define ANALOG_AZ_OVERLAP_DEGREES 540         // if overlap_led above is enabled, turn on overlap led line if azimuth is greater than this setting
+//#define ANALOG_AZ_OVERLAP_DEGREES 540         // if overlap_led above is enabled, turn on overlap led line if azimuth is greater than this setting
                                               // you must use raw azimuth (if the azimuth on the rotator crosses over to 0 degrees, add 360
                                               // for example, on a Yaesu 450 degree rotator with a starting point of 180 degrees, and an overlap LED
                                               // turning on when going CW and crossing 180, ANALOG_AZ_OVERLAP_DEGREES should be set for 540 (180 + 360)
@@ -112,8 +112,8 @@ You can tweak these, but read the online documentation!
 #define OPERATION_TIMEOUT 120000        // timeout for any rotation operation in mS ; 120 seconds is usually enough unless you have the speed turned down
 #define TIMED_INTERVAL_ARRAY_SIZE 20
 
-#define LCD_COLUMNS 20 //16
-#define LCD_ROWS 4 //2       // this is automatically set below for HARDWARE_EA4TX_ARS_USB and HARDWARE_M0UPU
+#define LCD_COLUMNS 16//20 //16
+#define LCD_ROWS 2//4 //2       // this is automatically set below for HARDWARE_EA4TX_ARS_USB and HARDWARE_M0UPU
 #define LCD_UPDATE_TIME 1000           // LCD update time in milliseconds
 #define LCD_HHMM_CLOCK_POSITION LEFT          //LEFT or RIGHT
 #define LCD_HHMMSS_CLOCK_POSITION LEFT          //LEFT or RIGHT
@@ -384,5 +384,3 @@ You can tweak these, but read the online documentation!
 #define SATELLITE_CALC_STAGE_1_RESOLUTION_SECS 120
 #define SATELLITE_CALC_STAGE_2_RESOLUTION_SECS 10
 #define SATELLITE_CALC_STAGE_3_RESOLUTION_SECS 1
-
-

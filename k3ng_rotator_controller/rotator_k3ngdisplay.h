@@ -76,7 +76,7 @@
 #define TEXT_BLINK_MS 500
 #define WORK_STRING_SIZE 32
 
-#define I2C_LCD_COLOR WHITE            // default color of I2C LCD display, including Adafruit and Yourduino; some Yourduino units may want this as LED_ON                  
+//#define I2C_LCD_COLOR WHITE            // default color of I2C LCD display, including Adafruit and Yourduino; some Yourduino units may want this as LED_ON                  
 // #define I2C_LCD_COLOR GREEN                  
 // #define I2C_LCD_COLOR LED_ON
 
@@ -148,4 +148,3 @@ private:
 };
 
 #endif //_K3NGDISPLAY_H
-
