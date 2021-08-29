@@ -1,8 +1,8 @@
 
 /* -------------------------- rotation settings ---------------------------------------*/
 
-#define AZIMUTH_STARTING_POINT_EEPROM_INITIALIZE 180      // the starting point in degrees of the azimuthal rotator - only used for initializing EEPROM the first time the code is run                                               
-#define AZIMUTH_ROTATION_CAPABILITY_EEPROM_INITIALIZE 450 // the default rotation capability of the rotator in degrees - only used for initializing EEPROM the first time the code is run
+#define AZIMUTH_STARTING_POINT_EEPROM_INITIALIZE 0      // the starting point in degrees of the azimuthal rotator - only used for initializing EEPROM the first time the code is run                                               
+#define AZIMUTH_ROTATION_CAPABILITY_EEPROM_INITIALIZE 360 // the default rotation capability of the rotator in degrees - only used for initializing EEPROM the first time the code is run
 
 /* 
 
@@ -86,7 +86,7 @@ You can tweak these, but read the online documentation!
 
 // Settings for OPTION_AZ_MANUAL_ROTATE_LIMITS
 #define AZ_MANUAL_ROTATE_CCW_LIMIT 0   // if using a rotator that starts at 180 degrees, set this to something like 185
-#define AZ_MANUAL_ROTATE_CW_LIMIT 535  // add 360 to this if you go past 0 degrees (i.e. 180 CW after 0 degrees = 540)
+#define AZ_MANUAL_ROTATE_CW_LIMIT 359  // add 360 to this if you go past 0 degrees (i.e. 180 CW after 0 degrees = 540)
 
 // Settings for OPTION_EL_MANUAL_ROTATE_LIMITS
 #define EL_MANUAL_ROTATE_DOWN_LIMIT -1
@@ -134,13 +134,13 @@ You can tweak these, but read the online documentation!
 #define LCD_CLEAR_BEFORE_REDRAW 1            // set to 0 to disable doing a clear before redraw
 #define LCD_REDRAW_UPON_COMMANDS 0           // set to 1 to enable screen redraws upon commands and button presses
 
-#define LCD_HEADING_ROW 2
+#define LCD_HEADING_ROW 3
 #define LCD_HEADING_FIELD_SIZE 20
-#define LCD_AZ_ONLY_HEADING_ROW 1
+#define LCD_AZ_ONLY_HEADING_ROW 3
 #define LCD_AZ_ONLY_HEADING_FIELD_SIZE 20
 #define LCD_EL_ONLY_HEADING_ROW 2
 #define LCD_EL_ONLY_HEADING_FIELD_SIZE 20
-#define LCD_STATUS_ROW 1
+#define LCD_STATUS_ROW 2
 #define LCD_STATUS_FIELD_SIZE 20
 #define LCD_DIRECTION_ROW 1
 #define LCD_HHMMSS_CLOCK_ROW 1

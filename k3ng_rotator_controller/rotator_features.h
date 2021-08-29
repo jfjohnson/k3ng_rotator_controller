@@ -94,12 +94,12 @@
 // #define FEATURE_AUDIBLE_ALERT
 
 /* preset rotary encoder features and options */
-// #define FEATURE_AZ_PRESET_ENCODER            // Uncomment for Rotary Encoder Azimuth Preset support
+#define FEATURE_AZ_PRESET_ENCODER            // Uncomment for Rotary Encoder Azimuth Preset support
 // #define FEATURE_EL_PRESET_ENCODER            // Uncomment for Rotary Encoder Elevation Preset support (requires FEATURE_AZ_PRESET_ENCODER above)
 //#define OPTION_ENCODER_HALF_STEP_MODE
 //#define OPTION_ENCODER_ENABLE_PULLUPS          // define to enable weak pullups on rotary encoder pins
 //#define OPTION_INCREMENTAL_ENCODER_PULLUPS  // define to enable weak pullups on 3 phase incremental rotary encoder pins
-//#define OPTION_PRESET_ENCODER_RELATIVE_CHANGE   // this makes the encoder(s) change the az or el in a relative fashion rather then store an absolute setting
+#define OPTION_PRESET_ENCODER_RELATIVE_CHANGE   // this makes the encoder(s) change the az or el in a relative fashion rather then store an absolute setting
 //#define OPTION_PRESET_ENCODER_0_360_DEGREES
 
 /* position sensor options */
@@ -146,7 +146,7 @@
 // #define OPTION_DISPLAY_BIG_CLOCK   // display date & time clock (set row with #define LCD_BIG_CLOCK_ROW)
 // #define OPTION_CLOCK_ALWAYS_HAVE_HOUR_LEADING_ZERO
 //#define OPTION_DISPLAY_GPS_INDICATOR  // display GPS indicator on LCD - set position with LCD_GPS_INDICATOR_POSITION and LCD_GPS_INDICATOR_ROW
-//#define OPTION_DISPLAY_DIRECTION_STATUS                         // LCD N, W, E, S, NW, etc. direction indicator
+#define OPTION_DISPLAY_DIRECTION_STATUS                         // LCD N, W, E, S, NW, etc. direction indicator
 // #define OPTION_DISPLAY_MOON_TRACKING_CONTINUOUSLY               // LCD
 // #define OPTION_DISPLAY_SATELLITE_TRACKING_CONTINUOUSLY          // LCD
 // #define OPTION_DISPLAY_SATELLITE_TRACKING_ALTERNATING           // LCD

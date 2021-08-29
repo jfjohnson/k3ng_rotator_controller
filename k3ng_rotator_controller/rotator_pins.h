@@ -27,11 +27,11 @@
 #define brake_az 8              // goes high to disengage azimuth brake (set to 0 to disable)
 #define az_speed_pot 0           // connect to wiper of 1K to 10K potentiometer for speed control (set to 0 to disable)
 #define az_preset_pot 0          // connect to wiper of 1K to 10K potentiometer for preset control (set to 0 to disable)
-#define preset_start_button 0    // connect to momentary switch (ground on button press) for preset start (set to 0 to disable or for preset automatic start)
-#define button_stop 0            // connect to momentary switch (ground on button press) for preset stop (set to 0 to disable or for preset automatic start)
+#define preset_start_button 13    // connect to momentary switch (ground on button press) for preset start (set to 0 to disable or for preset automatic start)
+#define button_stop A1            // connect to momentary switch (ground on button press) for preset stop (set to 0 to disable or for preset automatic start)
 #define rotation_indication_pin 0
 #define blink_led 0
-#define az_stepper_motor_pulse 44 //0
+#define az_stepper_motor_pulse  //0
 #define az_stepper_motor_direction 0
 #define az_rotation_stall_detected 0
 
@@ -58,8 +58,8 @@
 
 // rotary encoder pins and options
 #ifdef FEATURE_AZ_PRESET_ENCODER 
-  #define az_rotary_preset_pin1 0                     // CW Encoder Pin
-  #define az_rotary_preset_pin2 0                     // CCW Encoder Pin
+  #define az_rotary_preset_pin1 9                     // CW Encoder Pin
+  #define az_rotary_preset_pin2 10                     // CCW Encoder Pin
 #endif //FEATURE_AZ_PRESET_ENCODER
 
 #ifdef FEATURE_EL_PRESET_ENCODER 
