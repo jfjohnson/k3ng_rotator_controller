@@ -7724,6 +7724,25 @@ void apply_azimuth_offset(){
 
 float float_map(float x, float in_min, float in_max, float out_min, float out_max) {
 
+  #ifdef FEATURE_AZ_POSITION_HAM4_VOLTAGE_DIVIDER
+    float vref = 1023; //5v reference
+
+    //calculate r2 (potentiometer) in voltage divider
+    float r2 = (HAM4_DIVIDER_RESISTOR_1 * x) / (vref - x);
+    float r_wire = 0;  
+  
+    //calculate resistance of long wire runs
+    if(r2 > HAM4_POT_RANGE){ 
+      r_wire = r2 - HAM4_POT_RANGE;
+      r2 = HAM4_POT_RANGE;  
+    }
+    
+    //calculate linear equivalent of x
+    float vequiv = in_max * (r2/(HAM4_POT_RANGE + r_wire));
+
+    x = vequiv;
+  #endif  //FEATURE_AZ_POSITION_HAM4_VOLTAGE_DIVIDER
+  
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 
 }

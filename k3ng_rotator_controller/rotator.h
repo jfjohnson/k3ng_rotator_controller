@@ -324,6 +324,4 @@
 #define NEXTION_TRANSIENT_MESSAGE_IN_PROGRESS 2
 
 
-
 /* ------end of macros ------- */
-

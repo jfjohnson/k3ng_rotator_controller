@@ -45,6 +45,7 @@
 /* position sensors - pick one for azimuth and one for elevation if using an az/el rotator */
 #define FEATURE_AZ_POSITION_POTENTIOMETER   //this is used for both a voltage from a rotator control or a homebrew rotator with a potentiometer
 // #define FEATURE_AZ_POSITION_ROTARY_ENCODER
+#define FEATURE_AZ_POSITION_HAM4_VOLTAGE_DIVIDER  //Corrects for non-linear voltage readings if using a voltage divider to read pot position in HAM4/TX2 rotator
 // #define FEATURE_AZ_POSITION_ROTARY_ENCODER_USE_PJRC_LIBRARY  // library @ http://www.pjrc.com/teensy/td_libs_Encoder.html  
 // #define FEATURE_AZ_POSITION_PULSE_INPUT
 // #define FEATURE_AZ_POSITION_HMC5883L            // HMC5883L digital compass support

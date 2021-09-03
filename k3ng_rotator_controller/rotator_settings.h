@@ -384,3 +384,7 @@ You can tweak these, but read the online documentation!
 #define SATELLITE_CALC_STAGE_1_RESOLUTION_SECS 120
 #define SATELLITE_CALC_STAGE_2_RESOLUTION_SECS 10
 #define SATELLITE_CALC_STAGE_3_RESOLUTION_SECS 1
+
+//HAM4 Voltage Divider settings
+#define HAM4_POT_RANGE 500 //ohms
+#define HAM4_DIVIDER_RESISTOR_1 200 //ohms
